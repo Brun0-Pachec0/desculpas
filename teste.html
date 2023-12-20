@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de Desculpas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url(https://w.forfun.com/fetch/90/90f3f3f7168221ce47a332c7bca54dce.jpeg?w=1470&r=0.5625) center/cover no-repeat; /* Substitua pelo caminho da sua imagem de girassóis */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #apology-card {
+      background-color: rgba(255, 255, 255, 0.8); /* Adiciona uma sobreposição para tornar o texto mais legível */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    #apology-message {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #apology-button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    #apology-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div id="apology-card">
+  <h2>Pedido de Desculpas pro amor da minha vida, vulgo Rebequinha</h2>
+  <p id="apology-message"></p>
+  <button id="apology-button" onclick="showApology()">Mostrar Desculpas</button>
+</div>
+
+<script>
+    function aceitou() {
+        var apologyMessage = document.getElementById('apology-message');
+        apologyMessage.innerHTML = "Tomara que tenha dado certo, amo voce amor <3"
+    }
+
+
+  function showApology() {
+    var apologyMessage = document.getElementById('apology-message');
+    apologyMessage.innerHTML = "Desculpa por hoje gatinha, minha intenção não foi e nunca vai ser te magoar, não vou dar uma de vitima falando que ta tudo uma bagunça, fui babaca. Você é uma mulher incrível, sempre disposta a me ajudar e ajudar os outros, te admiro muito por isso, e por diversas outras coisas. Muito obrigado por ser incrível sempre, EU te amo muito!! <br> <button id='apology-button' onclick='aceitou()'>Aceitar desculpas</button>";
+  }
+</script>
+
+</body>
+</html>
